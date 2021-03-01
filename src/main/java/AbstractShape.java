@@ -9,4 +9,9 @@ public abstract class AbstractShape implements Shape{
             return diff>0? 1:-1;
         }
     }
+
+    @Override
+    public double getDistance(Shape other){
+        return new Line(this.getCenter(), other.getCenter()).length();
+    }
 }

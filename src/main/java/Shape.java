@@ -4,5 +4,6 @@ public interface Shape extends Comparable<Shape> {
     double area();
     double perimeter();
     Point getCenter();
+    double getDistance(Shape other);
 
 }
