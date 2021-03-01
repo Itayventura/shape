@@ -1,6 +1,6 @@
 public class Line {
-    Point a;
-    Point b;
+    private Point a;
+    private Point b;
 
     public Line(Point a, Point b){
         this.a = a;
