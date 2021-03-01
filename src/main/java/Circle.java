@@ -1,4 +1,4 @@
-public class Circle implements Shape {
+public class Circle extends AbstractShape {
     private Point center;
     private double radius;
 

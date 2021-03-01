@@ -1,4 +1,4 @@
-public class Quadrilateral implements Shape{
+public class Quadrilateral extends AbstractShape{
     private Point a;
     private Point b;
     private Point c;

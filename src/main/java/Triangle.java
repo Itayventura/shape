@@ -1,4 +1,4 @@
-public class Triangle implements Shape{
+public class Triangle extends AbstractShape{
     private Point a;
     private Point b;
     private Point c;
