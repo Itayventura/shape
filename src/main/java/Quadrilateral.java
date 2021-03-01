@@ -10,14 +10,13 @@ public class Quadrilateral extends AbstractShape{
         this.c = c;
         this.d = d;
     }
-    //todo
     @Override
     public boolean isRegular() {
         Line base = new Line(a, b);
         return (Math.abs(base.length() - new Line(a, d).length()) < 0.00001 &&
                 Math.abs(base.length() - new Line(b, c).length()) < 0.00001 &&
                 Math.abs(base.length() - new Line(c, d).length()) < 0.00001) &&
-                new Line(a, c).length() == new Line(b, d).length();
+                Math.abs(new Line(a, c).length() - new Line(b, d).length()) < 0.00001;
     }
 
     @Override
