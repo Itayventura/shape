@@ -15,9 +15,7 @@ public class Line {
 
     public double distance(Point point){
         Point closest = getClosest(point);
-        return getSlope() == Double.POSITIVE_INFINITY? Math.abs(point.getX()-a.getX()):
-                new Line(point, closest).length();
-//                Math.abs(getSlope()*point.getX()-point.getY()+getCross())/(getSlope()*getSlope()+1);
+        return new Line(point, closest).length();
     }
 
     public Point getClosest(Point point){
